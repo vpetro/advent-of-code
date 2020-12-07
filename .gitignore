@@ -12,6 +12,9 @@ target
 dist
 .lib
 
+# BSP
+.bsp
+
 # IDE project files/directories
 /.idea
 /.idea_modules
