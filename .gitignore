@@ -12,6 +12,12 @@ target
 dist
 .lib
 
+scala/.bloop/
+scala/.metals/
+
+scala/project
+scala/target
+scala/dist
 # BSP
 .bsp
 
