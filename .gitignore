@@ -42,3 +42,14 @@ tags
 /out
 /RUNNING_PID
 /nohup.out
+
+# python
+2021/python/env
+**/__pycache__/
+
+# java
+
+**/bin/
+**/gradle/
+**/.gradle/
+**/build/
