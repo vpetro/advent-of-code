@@ -3,13 +3,7 @@ from collections import defaultdict
 
 def read_data(input_filename: str):
     fh = resources.open_text('resources', input_filename)
-    lines = []
-    for line in fh.readlines():
-        start, finish = line.split(' -> ')
-        x1, y1 = [int(i) for i in start.split(',')]
-        x2, y2 = [int(i) for i in finish.split(',')]
-        lines.append([x1, y1, x2, y2])
-    return lines
+    return [list(map(int, line.replace(' -> ', ',').split(','))) for line in fh.readlines()]
 
 def get_change(i, j):
     mod = 0
@@ -38,7 +32,7 @@ def solve(data: list[list[int]], predicate):
     return sum([value >= 2 for _, value in grid.items()])
 
 if __name__ == "__main__":
-    data = read_data("input")
+    data = read_data("test")
     result1 = solve(data, lambda x,y: 0 in (x,y))
     result2 = solve(data, lambda x,y: True)
     print(f'part 1 result: {result1}')
