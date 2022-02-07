@@ -53,3 +53,6 @@ tags
 **/gradle/
 **/.gradle/
 **/build/
+
+# haskell
+**/dist-newstyle/
