@@ -12,14 +12,14 @@ target
 dist
 .lib
 
-scala/.bloop/
-scala/.metals/
+**/.bloop/
+**/.metals/
 
-scala/project
-scala/target
-scala/dist
+**/project
+**/target
+**/dist
 # BSP
-.bsp
+**/.bsp
 
 # IDE project files/directories
 /.idea
