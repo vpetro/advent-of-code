@@ -2,7 +2,7 @@
 lazy val root = (project in file(".")).
   settings(
     inThisBuild(List(
-      organization := "ai.vetted",
+      organization := "org.vpetro",
       scalaVersion := Versions.scalaVersion,
       libraryDependencies ++= List(
         Dependencies.scalatest,
@@ -10,6 +10,6 @@ lazy val root = (project in file(".")).
       )
 
     )),
-    name := "advent-of-code-2022"
+    name := "aoc22"
   )
 
