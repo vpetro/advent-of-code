@@ -1,4 +1,4 @@
-package advent2022.day01
+package org.vpetro.advent2022
 
 import better.files.File
 
